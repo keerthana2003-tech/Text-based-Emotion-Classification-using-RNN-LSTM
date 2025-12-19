@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+textarea {
+    width: 60%;
+    height: 120px;
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    background: #ff6f61;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: #ff3b2e;
+    transform: scale(1.1);
+}
+
+.result {
+    margin-top: 40px;
+}
+
+.emotion {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 10px #000;
+    animation: pop 1s ease-in-out;
+}
+
+.emoji {
+    font-size: 5em;
+    margin-top: 20px;
+    transform: perspective(500px) rotateY(15deg);
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0) perspective(500px) rotateY(15deg); }
+    50% { transform: translateY(-15px) perspective(500px) rotateY(-15deg); }
+}
